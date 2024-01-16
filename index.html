@@ -599,10 +599,12 @@
             </ul>
           </div>
           <div class="col-md-5 offset-md-1">
-            <form>
+
+            <form action="https://formspree.io/f/mwkgprwa" method="POST">
               <div class="mb-4">
                 <input
                   type="text"
+                  name="name"
                   class="form-control bg-secondary rounded-3"
                   placeholder="Nome e Cognome"
                 />
@@ -610,6 +612,7 @@
               <div class="mb-4">
                 <input
                   type="email"
+                  name="email"
                   class="form-control bg-secondary rounded-3"
                   placeholder="email"
                 />
@@ -617,6 +620,7 @@
               <div class="mb-4">
                 <input
                   type="text"
+                  name="phone"
                   class="form-control bg-secondary rounded-3"
                   placeholder="Telefono"
                 />
@@ -628,18 +632,20 @@
                   class="form-control bg-secondary rounded-3"
                 >
                   <option>Interessato in ..</option>
-                  <option value="erp">Body Building</option>
-                  <option value="sfa">Posing</option>
-                  <option value="cms">Power Lifting</option>
-                  <option value="crm">Wellness</option>
+                  <option value="Bodybuilding">Body Building</option>
+                  <option value="Posing">Posing</option>
+                  <option value="Power Lifting">Power Lifting</option>
+                  <option value="Wellness">Wellness</option>
                 </select>
               </div>
+
               <div class="mb-4 form-check">
-                <input type="checkbox" id="agree-check" />
+                <input type="checkbox" id="agree-check" name="Privacy"/>
                 <label for="agree-check" class="form-check-label ms-3">
                   Ho letto e accetto le condizioni della <a href="privacy.html">Privacy Policy</a>
                 </label>
               </div>
+
               <div class="d-grid gap-2">
                 <input
                   type="submit"
@@ -648,6 +654,7 @@
                 />
               </div>
             </form>
+
           </div>
         </div>
       </div>
